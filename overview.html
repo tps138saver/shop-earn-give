@@ -1,7 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<script>
+    $(document).ready(function() {
+        var iframe = $('iframe')[0],
+        player = $f(iframe),
+        status = $('.status');
 
+        player.addEvent('ready', function() {
+            player.api('pause');
+        });
+    }); 
+    </script>
+    
 <head>
 <!--     <link rel="stylesheet" type="text/css" href="style.css" /> -->
     <style type="text/css">
